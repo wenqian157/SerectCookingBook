@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
-            Secret Cooking Book
+            Wen's Secret Cooking Book
         </title>
         <style>
             body {
@@ -13,20 +13,28 @@
                 padding: 0;
 
             }
+            h1, h2{
+                text-align: left;
+                margin-top: 20px;
+            }
+            .category{
+                margin: 20px 0;
+                padding: 10px;
+            }
             .gallery{
                 display: flex;
                 flex-wrap: wrap;
-                gap: 10px;
-                justify-content: center;
+                gap: 50px 10px;
+                justify-content: flex-start;
                 padding: 20px;
             }
             .photo{
-                width: 300px;
-                text-align: center;
+                height: 400px;
+                text-align: left;
             }
             .photo img{
-                max-width: 100%;
-                height: auto;
+                max-width: auto;
+                height: 100%;
                 border: 1px solid #ccc;
             }
             .photo p {
@@ -35,12 +43,109 @@
         </style>
     </head>
     <body>
-        <h1 style="text-align: center;">Secret Cooking Book</h1>
-        <div class="photo">
-            <img src="cheeseCake.HEIC" alt="cheesecake">
-            <p>Lemon Cheesecake</p>
-
+        <h1 style="text-align: center;">Wen's Secret Cooking Book</h1>
+        <div class="category">
+            <h2>Appetizer</h2>
+            <div class="gallery">
+                <div class="photo">
+                    <img src="jpg/friedTofu.jpg" alt="friedTofu">
+                    <p>Japanese Style Fried Tofu</p>
+                </div>
+                <div class="photo">
+                    <img src="jpg/springRolls.jpg" alt="springRolls">
+                    <p>Springrolls</p>
+                </div>
+                <div class="photo">
+                    <img src="jpg/pumpkinSoup.jpg" alt="pumpkinSoup">
+                    <p>Pumpkin Soup</p>
+                </div>
+            </div>
+        </div>
+        <div class="category">
+            <h2>First</h2>
+            <div class="gallery">
+                <div class="photo">
+                    <img src="jpg/dumpling.jpg" alt="dumpling">
+                    <p>Pork-Pickle-Corn Dumplin</p>
+                </div>
+                <div class="photo">
+                    <img src="jpg/soupBao.jpg" alt="soupBao">
+                    <p>Soup Bao</p>
+                </div>
+                <div class="photo">
+                    <img src="jpg/steamBao.jpg" alt="steamBao">
+                    <p>Steamed Turkey Bao</p>
+                </div>
+                <div class="photo">
+                    <img src="jpg/chickenColdNoodle.jpg" alt="chickenColdNoodle">
+                    <p>Cold Noodle with Chicken</p>
+                </div>
+                <div class="photo">
+                    <img src="jpg/handMadeNoodles.jpg" alt="handMadeNoodles">
+                    <p>Hand-Made Streching Noodles</p>
+                </div>
+                <div class="photo">
+                    <img src="jpg/tokomomiyaki.jpg" alt="tokomomiyaki">
+                    <p>Tokono Miyaki</p>
+                </div>
+            </div>
         </div>
 
+        <div class="category">
+            <h2>Main</h2>
+            <div class="gallery">
+                <div class="photo">
+                    <img src="jpg/spicyBeef.jpg" alt="spicyBeef">
+                    <p>Sichuan Spicy Beef</p>
+                </div>
+                <div class="photo">
+                    <img src="jpg/porkBellySlowCook.jpg" alt="porkBellySlowCook">
+                    <p>Slow Cooked Pork Belly</p>
+                </div>
+                <div class="photo">
+                    <img src="jpg/garlicRibs.jpg" alt="garlicRibs">
+                    <p>Garlic Pork Ribs</p>
+                </div>
+                <div class="photo">
+                    <img src="jpg/yuxiangPork.jpg" alt="yuxiangPork">
+                    <p>Yuxiang Pork</p>
+                </div>
+                <div class="photo">
+                    <img src="jpg/schnitzel.jpg" alt="schnitzel">
+                    <p>Pork Schnitzel</p>
+                </div>
+                <div class="photo">
+                    <img src="jpg/friedChicken.jpg" alt="friedChicken">
+                    <p>Taiwan Style Fried Chicken</p>
+                </div>
+                <div class="photo">
+                    <img src="jpg/lemonChicken.jpg" alt="lemonChicken">
+                    <p>Roasted Lemon Chicken</p>
+                </div>
+                <div class="photo">
+                    <img src="jpg/meatnPocketBao.jpg" alt="meatnPocketBao">
+                    <p>Pork in Pocket Bao</p>
+                </div>
+                <div class="photo">
+                    <img src="jpg/teriyaki.jpg" alt="teriyaki">
+                    <p>Teriyaki Chicken</p>
+                </div>
+                <div class="photo">
+                    <img src="jpg/frog.jpg" alt="frog">
+                    <p>Frog Legs</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>Desert</h2>
+            <div class="gallery">
+                <div class="photo">
+                    <img src="jpg/cheeseCake.jpg" alt="cheesecake">
+                    <p>Lemon Cheesecake</p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
