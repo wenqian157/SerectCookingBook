@@ -14,7 +14,17 @@
                 background-color: rgb(15, 15, 15);
 
             }
-            h1, h2{
+            h1{
+                font-size: 2.5rem;
+                text-align: left;
+                margin-top: 20px;
+                padding-top: 20px;
+                padding-left: 40px;
+                color: rgb(255, 255, 255);
+            }
+            h2{
+                font-size: 2rem;
+                padding-left: 20px;
                 text-align: left;
                 margin-top: 0px;
                 color: rgb(255, 255, 255);
@@ -60,41 +70,44 @@
                 height: 300px;
                 width: 300px;
                 margin-left: 0px;
-                background-color:rgba(0, 0, 0, 0.5); /* Light background color */
-                padding: 0 0px; /* Add horizontal padding */
+                background-color:rgba(255, 255, 255, 0.107); /* Light background color */
+                padding: 0 3px; /* Add horizontal padding */
+                border: 1px solid #ccc;
                 transition: all 0.3s ease; /* Smooth reveal */
             }
             .photo:hover {
-            display: flex; /* Flexbox layout on hover */
-            align-items: center; /* Center image and text vertically */
-        }
+                display: flex; /* Flexbox layout on hover */
+                align-items: center; /* Center image and text vertically */
+            }
 
             /* Reveal the text when hovering over the container */
             .photo:hover p.hover {
                 display: block;
-                border-left: 10px solid #ffffff; /* Add border-top for a clean look */
+                border-left: 10px solid #ffa41c; /* Add border-top for a clean look */
             }    
         </style>
     </head>
     <body>
-        <h1 style="text-align: center;">LANGASTRASSE KITCHEN</h1>
+        <h1 style="text-align: left;">LANGASTRASSE KITCHEN</h1>
         <div class="category">
             <h2>Appetizer</h2>
             <div class="gallery">
                 <div class="photo">
                     <img src="jpg/friedTofu.jpg" alt="friedTofu">
                     <p class="fix">Japanese Style Fried Tofu</p>
-                    <p class="hover">This is the additional information that appears when you hover over the picture.</p>
+                    <p class="hover">Tofu coated with potato starch, pan fried, seasoned with soy sauce, mirin and with tuna flakes on top</p>
                 </div>
 
                 <div class="photo">
                     <img src="jpg/springRolls.jpg" alt="springRolls">
-                    <p>Springrolls</p>
+                    <p class="fix">Springrolls</p>
+                    <p class="hover">.......</p>
                 </div>
 
                 <div class="photo">
                     <img src="jpg/pumpkinSoup.jpg" alt="pumpkinSoup">
-                    <p>Pumpkin Soup</p>
+                    <p class="fix">Pumpkin Soup</p>
+                    <p class="hover">.......</p>
                 </div>
             </div>
         </div>
@@ -103,27 +116,33 @@
             <div class="gallery">
                 <div class="photo">
                     <img src="jpg/dumpling.jpg" alt="dumpling">
-                    <p>Pork-Pickle-Corn Dumplin</p>
+                    <p class="fix">Pork-Pickle-Corn Dumplin</p>
+                    <p class="hover">Home-made dumplings</p>
                 </div>
                 <div class="photo">
                     <img src="jpg/soupBao.jpg" alt="soupBao">
-                    <p>Soup Bao</p>
+                    <p class="fix">Soup Bao</p>
+                    <p class="hover">Steamed pork bao with soup inside</p>
                 </div>
                 <div class="photo">
                     <img src="jpg/steamBao.jpg" alt="steamBao">
-                    <p>Steamed Turkey Bao</p>
+                    <p class="fix">Steamed Turkey Bao</p>
+                    <p class="hover">Steamed bao with pulled turkey stuffing</p>
                 </div>
                 <div class="photo">
                     <img src="jpg/chickenColdNoodle.jpg" alt="chickenColdNoodle">
-                    <p>Cold Noodle with Chicken</p>
+                    <p class="fix">Cold Noodle with Chicken</p>
+                    <p class="hover">Soba noodles with chicken and veggie</p>
                 </div>
                 <div class="photo">
                     <img src="jpg/handMadeNoodles.jpg" alt="handMadeNoodles">
-                    <p>Hand-Made Streching Noodles</p>
+                    <p class="fix">Hand-Made Streching Noodles</p>
+                    <p class="hover">Home-made chinese streching noodles with minced beef</p>
                 </div>
                 <div class="photo">
                     <img src="jpg/tokomomiyaki.jpg" alt="tokomomiyaki">
-                    <p>Tokono Miyaki</p>
+                    <p class="fix">Tokono Miyaki</p>
+                    <p class="hover">.......</p>
                 </div>
             </div>
         </div>
@@ -133,43 +152,53 @@
             <div class="gallery">
                 <div class="photo">
                     <img src="jpg/spicyBeef.jpg" alt="spicyBeef">
-                    <p>Sichuan Spicy Beef</p>
+                    <p class="fix">Sichuan Spicy Beef</p>
+                    <p class="hover">.......</p>
                 </div>
                 <div class="photo">
                     <img src="jpg/porkBellySlowCook.jpg" alt="porkBellySlowCook">
-                    <p>Slow Cooked Pork Belly</p>
+                    <p class="fix">Slow Cooked Pork Belly</p>
+                    <p class="hover">.......</p>
                 </div>
                 <div class="photo">
                     <img src="jpg/garlicRibs.jpg" alt="garlicRibs">
-                    <p>Garlic Pork Ribs</p>
+                    <p class="fix">Garlic Pork Ribs</p>
+                    <p class="hover">.......</p>
                 </div>
                 <div class="photo">
                     <img src="jpg/yuxiangPork.jpg" alt="yuxiangPork">
-                    <p>Yuxiang Pork</p>
+                    <p class="fix">Yuxiang Pork</p>
+                    <p class="hover">.......</p>
                 </div>
                 <div class="photo">
                     <img src="jpg/schnitzel.jpg" alt="schnitzel">
-                    <p>Pork Schnitzel</p>
+                    <p class="fix">Pork Schnitzel</p>
+                    <p class="hover">.......</p>
                 </div>
                 <div class="photo">
                     <img src="jpg/friedChicken.jpg" alt="friedChicken">
-                    <p>Taiwan Style Fried Chicken</p>
+                    <p class="fix">Taiwan Style Fried Chicken</p>
+                    <p class="hover">.......</p>
                 </div>
                 <div class="photo">
                     <img src="jpg/lemonChicken.jpg" alt="lemonChicken">
-                    <p>Roasted Lemon Chicken</p>
+                    <p class="fix">Roasted Lemon Chicken</p>
+                    <p class="hover">.......</p>
                 </div>
                 <div class="photo">
                     <img src="jpg/meatnPocketBao.jpg" alt="meatnPocketBao">
-                    <p>Pork in Pocket Bao</p>
+                    <p class="fix">Pork in Pocket Bao</p>
+                    <p class="hover">.......</p>
                 </div>
                 <div class="photo">
                     <img src="jpg/teriyaki.jpg" alt="teriyaki">
-                    <p>Teriyaki Chicken</p>
+                    <p class="fix">Teriyaki Chicken</p>
+                    <p class="hover">.......</p>
                 </div>
                 <div class="photo">
                     <img src="jpg/frog.jpg" alt="frog">
-                    <p>Frog Legs</p>
+                    <p class="fix">Frog Legs</p>
+                    <p class="hover">.......</p>
                 </div>
 
             </div>
@@ -180,7 +209,8 @@
             <div class="gallery">
                 <div class="photo">
                     <img src="jpg/cheeseCake.jpg" alt="cheesecake">
-                    <p>Lemon Cheesecake</p>
+                    <p class="fix">Lemon Cheesecake</p>
+                    <p class="hover">.......</p>
                 </div>
             </div>
         </div>
