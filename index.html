@@ -8,44 +8,54 @@
         </title>
         <style>
             body {
-                font-family: Arial, Helvetica;
+                font-family: Helvetica, Arial, sans-serif;
                 margin: 0;
                 padding: 0;
+                background-color: rgb(15, 15, 15);
 
             }
             h1, h2{
                 text-align: left;
-                margin-top: 20px;
-                color: palevioletred;
+                margin-top: 0px;
+                color: rgb(255, 255, 255);
             }
             .category{
-                margin: 20px 0;
+                margin: 0px 0;
                 padding: 10px;
             }
             .gallery{
                 display: flex;
                 flex-wrap: wrap;
-                gap: 50px 10px;
+                gap: 5px;
                 justify-content: flex-start;
-                padding: 20px;
+                padding: 0px;
             }
             .photo{
-                height: 400px;
+                height: 300px;
                 text-align: left;
+                position: relative; /* Establishes a positioning context */
+                display: inline-block; /* Ensures the container only wraps the content */
             }
             .photo img{
                 max-width: auto;
                 height: 100%;
                 border: 1px solid #ccc;
+                display: block; /* Prevents spacing below the image */
             }
             .photo p {
-                margin-top: 5px;
-                color: palevioletred;
+                /* margin-top: 5px; */
+                color: rgb(255, 255, 255);
+                position: absolute; /* Position relative to the container */
+                bottom: 0.1%; /* Move text to the middle vertically */
+                left: 0.1%; /* Move text to the middle horizontally */
+                background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+                padding: 5px; /* Add some spacing around the text */
+                border-radius: 5px; /* Optional: Rounded corners */
             }    
         </style>
     </head>
     <body>
-        <h1 style="text-align: center;">Wen's Secret Cooking Book</h1>
+        <h1 style="text-align: center;">LANGASTRASSE KITCHEN</h1>
         <div class="category">
             <h2>Appetizer</h2>
             <div class="gallery">
