@@ -34,7 +34,10 @@
                 height: 300px;
                 text-align: left;
                 position: relative; /* Establishes a positioning context */
-                display: inline-block; /* Ensures the container only wraps the content */
+                display: block; 
+                align-items: center;
+                width: fit-content;
+                /* display: inline-block; /* Ensures the container only wraps the content */
             }
             .photo img{
                 max-width: auto;
@@ -42,8 +45,7 @@
                 border: 1px solid #ccc;
                 display: block; /* Prevents spacing below the image */
             }
-            .photo p {
-                /* margin-top: 5px; */
+            .photo p.fix {
                 color: rgb(255, 255, 255);
                 position: absolute; /* Position relative to the container */
                 bottom: 0.1%; /* Move text to the middle vertically */
@@ -51,6 +53,26 @@
                 background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
                 padding: 5px; /* Add some spacing around the text */
                 border-radius: 5px; /* Optional: Rounded corners */
+            }
+            .photo p.hover {
+                display: none;
+                color: rgb(255, 255, 255);
+                height: 300px;
+                width: 300px;
+                margin-left: 0px;
+                background-color:rgba(0, 0, 0, 0.5); /* Light background color */
+                padding: 0 0px; /* Add horizontal padding */
+                transition: all 0.3s ease; /* Smooth reveal */
+            }
+            .photo:hover {
+            display: flex; /* Flexbox layout on hover */
+            align-items: center; /* Center image and text vertically */
+        }
+
+            /* Reveal the text when hovering over the container */
+            .photo:hover p.hover {
+                display: block;
+                border-left: 10px solid #ffffff; /* Add border-top for a clean look */
             }    
         </style>
     </head>
@@ -61,12 +83,15 @@
             <div class="gallery">
                 <div class="photo">
                     <img src="jpg/friedTofu.jpg" alt="friedTofu">
-                    <p>Japanese Style Fried Tofu</p>
+                    <p class="fix">Japanese Style Fried Tofu</p>
+                    <p class="hover">This is the additional information that appears when you hover over the picture.</p>
                 </div>
+
                 <div class="photo">
                     <img src="jpg/springRolls.jpg" alt="springRolls">
                     <p>Springrolls</p>
                 </div>
+
                 <div class="photo">
                     <img src="jpg/pumpkinSoup.jpg" alt="pumpkinSoup">
                     <p>Pumpkin Soup</p>
