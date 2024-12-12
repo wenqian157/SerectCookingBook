@@ -84,7 +84,28 @@
             .photo:hover p.hover {
                 display: block;
                 border-left: 10px solid #ffa41c; /* Add border-top for a clean look */
-            }    
+            }
+            @media (max-width: 768px) {
+                .photo {
+                    height: 150px;
+                }    
+            }
+            @media (max-width: 768px) {
+                .photo p.hover {
+                    height: 150px;
+                    width: 150px;
+                }    
+            }
+            @media (max-width: 768px) {
+                h1 {
+                    font-size: 1.5rem;
+                }    
+            }
+            @media (max-width: 768px) {
+                h2 {
+                    font-size: 1rem;
+                }    
+            }
         </style>
     </head>
     <body>
